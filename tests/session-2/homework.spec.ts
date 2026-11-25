@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-// Session 2 homework — see /session-2/manual-test-cases.md for the four test cases.
+// Session 2 homework — see /session-2/manual-test-cases.md for the three test cases.
 // Write one test per test case below. Submit on branch hw/s2.
 
 test.describe('Session 2 homework', () => {
