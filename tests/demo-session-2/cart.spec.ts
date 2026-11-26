@@ -9,5 +9,5 @@ test('adding a product updates the cart', async ({ page }) => {
   await expect(page.getByRole('alert')).toContainText('Product added'); // feedback shown
   await expect(page.getByTestId('cart-quantity')).toHaveText('1'); // cart updated
   await page.getByTestId('nav-cart').click();
-  await expect(page.getByTestId('product-title')).toHaveText(['Claw Hammer']);
+  await expect(page.getByTestId('product-title')).toHaveText(['Claw Hammer###']);
 });
