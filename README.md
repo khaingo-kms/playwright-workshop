@@ -50,7 +50,8 @@ playwright-workshop/
   tests/
     smoke.spec.ts          pre-work smoke test
     session-1/             in-class exercises (ex1–ex4) and homework for Session 1
-  homework/session-1/      homework brief: manual test cases + scoring
+    session-2/             broken suite (ex1–ex2), ex3, and homework for Session 2
+  homework/session-N/      homework brief for each session: test cases + scoring
   prework/                 TypeScript exercises + auto-grader
   docs/review-checklist.md what reviewers look for (grows each session)
   scripts/selfcheck.mjs    run the grader's automatic checks yourself
@@ -85,6 +86,15 @@ change it to `test`, fill in the steps, and run it.
 | 2 — Search | `tests/session-1/ex2-search.spec.ts` |
 | 3 — Filter by category | `tests/session-1/ex3-filter.spec.ts` |
 | 4 — Locator review (rewrite brittle locators) | `tests/session-1/ex4-locator-review.spec.ts` |
+
+| Session 2 exercise | File |
+|---|---|
+| 1 — Read the failures (diagnose, don't fix) | `tests/session-2/broken/` |
+| 2 — Fix the timing flakes | the three timing tests in `tests/session-2/broken/` (account, cart, search) — run them with `-g "log in\|confirmation\|only pliers"` |
+| 3 — Strengthen weak assertions | `tests/session-2/ex3-weak-assertions.spec.ts` |
+| 4 — Find the failure in the evidence | any failing ex3 test, run with `--trace on` |
+
+The Session 2 broken suite starts as `test.describe.fixme` so it doesn't break CI: change it to `test.describe` to run it.
 
 Fell behind? Ask the instructor — reference solutions are shared after the exercise, not before.
 
